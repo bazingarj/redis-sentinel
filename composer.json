@@ -1,17 +1,17 @@
 {
-  "name": "jenner/redis_sentinel",
+  "name": "bazingarj/redis_sentinel",
   "description": "redis sentinel client for php 5.3+",
   "keywords": [
     "sentinel",
     "redis sentinel",
-    "sentinel client",
+    "sentinel pool client",
     "redis sentinel client"
   ],
   "authors": [
     {
-      "name": "Jenner",
-      "email": "hypxm@qq.com",
-      "homepage": "http://www.huyanping.cn"
+      "name": "bazingarj",
+      "email": "rahul.juneja3@gmail.com",
+      "homepage": "https://rjuneja.com"
     }
   ],
   "license": "MIT",
@@ -22,8 +22,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Jenner\\RedisSentinel\\": "./src",
-      "Jenner\\RedisSentinel\\Test\\": "./tests"
+      "bazingarj\\RedisSentinel\\": "./src",
+      "bazingarj\\RedisSentinel\\Test\\": "./tests"
     }
   }
 }
