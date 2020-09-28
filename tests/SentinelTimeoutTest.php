@@ -1,7 +1,7 @@
 <?php
-namespace Jenner\RedisSentinel\Test;
+namespace bazingarj\RedisSentinel\Test;
 
-use Jenner\RedisSentinel\SentinelPool;
+use \RedisSentinel\SentinelPool;
 
 class SentinelTimeoutTest extends SentinelPoolTest
 {

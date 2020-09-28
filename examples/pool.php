@@ -10,7 +10,7 @@
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
 
 
-$sentinel_pool = new \Jenner\RedisSentinel\SentinelPool();
+$sentinel_pool = new \bazingarj\RedisSentinel\SentinelPool();
 $sentinel_pool->addSentinel('127.0.0.1', 26379);
 $sentinel_pool->addSentinel('127.0.0.1', 26380);
 

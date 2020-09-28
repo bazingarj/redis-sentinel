@@ -1,16 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Jenner
- * Date: 2016/12/28
- * Time: 17:44
- */
 
-namespace Jenner\RedisSentinel;
+namespace bazingarj\RedisSentinel;
 
 /**
  * Class SentinelPool
- * @package Jenner\RedisSentinel
+ * @package bazingarj\RedisSentinel
  *
  * @method string ping()
  * @method array masters()

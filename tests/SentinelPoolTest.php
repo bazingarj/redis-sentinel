@@ -1,14 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: huyanping
- * Date: 2016/12/30
- * Time: 09:30
- */
 
-namespace Jenner\RedisSentinel\Test;
+namespace bazingarj\RedisSentinel\Test;
 
-use Jenner\RedisSentinel\SentinelPool;
+use bazingarj\RedisSentinel\SentinelPool;
 
 class SentinelPoolTest extends \PHPUnit_Framework_TestCase
 {

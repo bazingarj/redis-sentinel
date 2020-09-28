@@ -6,7 +6,7 @@
  * Time: 14:25
  */
 
-namespace Jenner\RedisSentinel;
+namespace bazingarj\RedisSentinel;
 
 
 class SentinelClientNotConnectException extends \RedisException

@@ -10,7 +10,7 @@
 require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
 
 
-$sentinel = new \Jenner\RedisSentinel\Sentinel();
+$sentinel = new \bazingarj\RedisSentinel\Sentinel();
 $sentinel->connect('127.0.0.1', 6379);
 $address = $sentinel->getMasterAddrByName('mymaster');
 

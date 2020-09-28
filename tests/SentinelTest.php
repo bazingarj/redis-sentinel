@@ -1,16 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: huyanping
- * Date: 2016/12/27
- * Time: 15:22
- */
 
-namespace Jenner\RedisSentinel\Test;
+namespace bazingarj\RedisSentinel\Test;
 
 
-use Jenner\RedisSentinel\Sentinel;
-use Jenner\RedisSentinel\SentinelClientNotConnectException;
+use bazingarj\RedisSentinel\Sentinel;
+use bazingarj\RedisSentinel\SentinelClientNotConnectException;
 
 class SentinelTest extends \PHPUnit_Framework_TestCase
 {

@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Jenner
- * Date: 2016/12/27
- * Time: 14:23
- */
 
-namespace Jenner\RedisSentinel;
+namespace bazingarj\RedisSentinel;
 
 class Sentinel
 {
