@@ -77,7 +77,7 @@ class SentinelPool
      */
     public function getRedis($master_name)
     {
-        if(empty($sentinels)){
+        if(empty($this->sentinels)){
             throw new SentinelClientNotConnectException("No sentinel client connected");
         }
         $address = $this->getMasterAddrByName($master_name);
