@@ -57,11 +57,14 @@ class SentinelPool
     {
         $sentinel = new Sentinel($timeout);
         // if connect to sentinel successfully, add it to sentinels array
-        if ($sentinel->connect($host, $port, $timeout)) {
-            $this->sentinels[] = $sentinel;
-            return true;
-        }
+        try{
+            if ($sentinel->connect($host, $port, $timeout)) {
+                $this->sentinels[] = $sentinel;
+                return true;
+            }
+        }catch(\RedisException $e){
 
+        }
         return false;
     }
 
@@ -74,6 +77,9 @@ class SentinelPool
      */
     public function getRedis($master_name)
     {
+        if(empty($sentinels)){
+            throw new SentinelClientNotConnectException("No sentinel client connected");
+        }
         $address = $this->getMasterAddrByName($master_name);
         $redis = new \Redis();
         if (!$redis->connect($address['ip'], $address['port'], $this->currentSentinel->getTimeout())) {
